@@ -30,15 +30,15 @@ const OneArticleBlock = ({ section }) => {
     article && (
       <div className="one-article-block">
         <div className="article-content">
-          <h1>{article.title}</h1>
-          <p>{article.abstract}</p>
+          <a href={article.url} target='_blank'><h1>{article.title}</h1></a>
+          <a href={article.url} target='_blank'><p>{article.abstract}</p></a>
           <a href={article.url} target='_blank'>Read more</a>
           <div className="article-meta">
-             <span>{article.byline}</span> 
+            <span>{article.byline}</span>
           </div>
         </div>
         {article.multimedia && article.multimedia[0] && (
-          <img src={article.multimedia[0].url} alt={article.title} />
+          <a href={article.url} target='_blank'><img src={article.multimedia[0].url} alt={article.title} /></a>
         )}
       </div>
     )

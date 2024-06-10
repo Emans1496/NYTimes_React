@@ -50,6 +50,12 @@
   margin-bottom: 10px;
 }
 
+.hero-side-article a {
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 10px;
+}
+
 .article-meta {
   font-size: 0.9rem;
   color: #666;
@@ -94,3 +100,4 @@
     flex: 1 1 calc(50% - 10px);
   }
 }
+
