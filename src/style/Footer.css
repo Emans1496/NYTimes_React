@@ -1,0 +1,33 @@
+.footer-img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  p {
+    font-family: 'Gupter', serif;
+    font-style: bold;
+  }
+  
+  .footer-list a {
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    font-family: 'Gupter', serif;
+    padding: 5px;
+  }
+  
+  .footer-list a:hover {
+    text-decoration: none;
+    color: gray;
+    text-align: left;
+    font-family: 'Gupter', serif;
+    padding: 5px;
+  }
+  
