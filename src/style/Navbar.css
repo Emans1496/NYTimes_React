@@ -26,6 +26,7 @@
   background: none;
   cursor: pointer;
   padding: 10px;
+  color: #333;
 }
 
 .navbar-menu {
@@ -39,6 +40,8 @@
 
 .navbar-item {
   margin: 15px;
+  color: #333;
+
 }
 
 .navbar-item a {
@@ -51,6 +54,7 @@
 .navbar-item a:hover {
   color: gray;
   text-decoration: underline;
+  
 }
 
 .divider {
@@ -90,10 +94,14 @@
 
   .navbar-item {
       margin: 10px 0;
+      color: #333;
+
   }
 
   .hamburger {
       display: block;
+      color: #333;
+
   }
 
   .navbar-logo img {
