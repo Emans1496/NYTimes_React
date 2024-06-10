@@ -12,7 +12,7 @@ const OneArticleBlock = ({ section }) => {
     const loadTopStory = async () => {
       try {
         const data = await fetchTopStories(section);
-        setArticle(data[0]); // Prendi solo il primo articolo
+        setArticle(data[0]); 
       } catch (error) {
         setError(error.message);
       } finally {

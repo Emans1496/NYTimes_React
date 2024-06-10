@@ -13,7 +13,6 @@ function App() {
   return (
     <div className="App">
       <main className="main-content">
-        {/* Aggiungi i blocchi degli articoli  */}
         <Header></Header>
         <Navbar></Navbar>
         <HeroBlockArticles section="home" />
