@@ -45,7 +45,7 @@
 .button:hover {
   background-color: rgb(63, 88, 106);
   transition: 0.5s;
-  color: white;
+  color: gray;
   border: 0px;
   border-radius: 5px;
   padding: 5px;

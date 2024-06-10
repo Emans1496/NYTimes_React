@@ -77,7 +77,7 @@
 
 .hero-main-article a:hover {
   text-decoration: none;
-  color: rgb(86, 123, 149);
+  color: gray;
 }
 
 @media (max-width: 768px) {
