@@ -32,8 +32,10 @@ function Navbar() {
                     <li className="navbar-item"><a href="#">Cooking</a></li>
                     <li className="navbar-item"><a href="#">Wirecutter</a></li>
                     <li className="navbar-item"><a href="#">The Athletic</a></li>
-                </ul>
+                </ul>    
             </div>
+            <span className='divider2'></span>
+            <span className='divider2'></span>
         </nav>
     );
 }

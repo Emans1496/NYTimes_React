@@ -16,7 +16,7 @@
 }
 
 .navbar-logo img {
-  max-height: 60px;
+  width: 500px;  
 }
 
 .hamburger {
@@ -62,6 +62,16 @@
   margin-top: 3px;
 }
 
+
+.divider2 {
+  content: "";
+  display: double-block;
+  width: 50%;
+  height: 2px;
+  background-color: #333;
+  margin-top: 3px;
+}
+
 @media (max-width: 768px) {
   .navbar-container {
       flex-direction: column;
@@ -87,6 +97,6 @@
   }
 
   .navbar-logo img {
-      max-height: 50px;
+      width: 250px;
   }
 }
