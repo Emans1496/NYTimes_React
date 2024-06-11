@@ -23,16 +23,15 @@
 
 .top-article h2 {
   font-size: 1.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .top-article p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .article-meta {
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   color: #666;
 }
 
