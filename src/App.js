@@ -1,31 +1,41 @@
 import React from 'react';
-import Header from './components/Topheader';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import TopHeader from './components/Topheader';
 import Footer from './components/Footer';
-import OneArticleBlock from './components/OneArticlesBlock';
-import HeroBlockArticles from './components/HeroBlockArticles';
-import ThreeArticlesBlock from './components/ThreeArticlesBlock';
-import './style/App.css';
-
-
+import Home from './pages/Home';
+import World from './pages/World';
+import Business from './pages/Business';
+import Arts from './pages/Arts';
+import Lifestyle from './pages/Lifestyle';
+import Opinion from './pages/Opinion';
+import Audio from './pages/Audio';
+import Games from './pages/Games';
+import Cooking from './pages/Cooking';
+import Wirecutter from './pages/Wirecutter';
+import TheAthletic from './pages/TheAthletic';
 
 function App() {
-  return (
-    <div className="App">
-      <main className="main-content">
-        <Header></Header>
-        <Navbar></Navbar>
-        <HeroBlockArticles section="home" />
-        <OneArticleBlock section="us" />
-        <OneArticleBlock section="arts" />
-        <ThreeArticlesBlock section="technology" />
-        <ThreeArticlesBlock section="world" />
-        <OneArticleBlock section="food"/>
-        <HeroBlockArticles section="sports" />
-        <Footer></Footer>
-      </main>
-    </div>
-  );
+    return (
+            <div>
+                <TopHeader />
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/world" element={<World />} />
+                    <Route path="/business" element={<Business />} />
+                    <Route path="/arts" element={<Arts />} />
+                    <Route path="/lifestyle" element={<Lifestyle />} />
+                    <Route path="/opinion" element={<Opinion />} />
+                    <Route path="/audio" element={<Audio />} />
+                    <Route path="/games" element={<Games />} />
+                    <Route path="/cooking" element={<Cooking />} />
+                    <Route path="/wirecutter" element={<Wirecutter />} />
+                    <Route path="/theathletic" element={<TheAthletic />} />
+                </Routes>
+                <Footer />
+            </div>
+    );
 }
 
 export default App;

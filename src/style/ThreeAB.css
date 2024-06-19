@@ -1,90 +1,76 @@
 .three-articles-block {
-  font-family: 'Gupter', serif;
-}
-
-.three-articles-block {
   display: flex;
-  flex-direction: column;
+  gap: 20px;
   margin: 20px 0;
   padding: 20px;
   border-bottom: 1px solid #e2e2e2;
 }
 
-.top-articles {
+.articles-left {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.article-content {
   margin-bottom: 20px;
 }
 
-.top-article {
-  flex: 1;
-  margin-right: 10px;
-}
-
-.top-article h2 {
+.article-content h2 {
   font-size: 1.5rem;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.top-article p {
+.article-content p {
   margin-bottom: 5px;
+  font-size: 1rem;
 }
 
 .article-meta {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   color: #666;
 }
 
-.bottom-article {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.bottom-article .article-content {
-  max-width: 60%;
-}
-
-.bottom-article img {
-  max-width: 35%;
+.article-image {
+  width: 100%;
   height: auto;
-  object-fit: cover;
   border-radius: 5px;
 }
 
-.three-articles-block a {
-  text-decoration: none;
-  color: #333;
-  margin-bottom: 10px;
+.image-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.three-articles-block a:hover {
+.article-content a {
   text-decoration: none;
-  color: gray;
+  color: #333;
+}
+
+.article-content a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e2e2e2;
+  margin: 20px 0;
 }
 
 @media (max-width: 768px) {
-  .top-articles {
-      flex-direction: column;
+  .three-articles-block {
+    flex-direction: column;
   }
 
-  .top-article {
-      margin-right: 0;
-      margin-bottom: 20px;
+  .image-right {
+    margin-top: 20px;
   }
 
-  .bottom-article {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .bottom-article .article-content {
-      max-width: 100%;
-      margin-bottom: 10px;
-  }
-
-  .bottom-article img {
-      max-width: 100%;
-      margin-bottom: 10px;
+  .article-image {
+    width: 100%;
   }
 }

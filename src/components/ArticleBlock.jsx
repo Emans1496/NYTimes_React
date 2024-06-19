@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchTopStories } from './FetchTopStories';
+import { fetchTopStories } from '../utils/FetchTopStories';
 
 const ArticleBlock = ({ section, count }) => {
   const [articles, setArticles] = useState([]);
