@@ -30,13 +30,13 @@ Il componente `HeroBlockArticles` visualizza un gruppo di articoli principali in
 
 Il componente `OneArticleBlock` visualizza un singolo articolo con una grande immagine, titolo e descrizione. Viene utilizzato per mettere in risalto articoli individuali in diverse sezioni della pagina.
 
-### TwoArticlesBlock
-
-Il componente `TwoArticlesBlock` visualizza due articoli affiancati. È utile per mettere a confronto due articoli o per mostrare due notizie rilevanti in una sezione compatta.
-
 ### ThreeArticlesBlock
 
 Il componente `ThreeArticlesBlock` visualizza tre articoli in una disposizione a griglia. È ideale per sezioni che necessitano di mostrare una serie di notizie correlate.
+
+### Skeleton Loading
+
+Per migliorare l'esperienza utente durante il caricamento dei dati, utilizziamo un effetto skeleton loading che mostra dei segnaposto mentre i contenuti reali vengono caricati.
 
 ## Componenti di Servizio
 
@@ -48,6 +48,14 @@ La funzione `fetchTopStories` è un servizio che gestisce il recupero degli arti
 
 Il servizio API centralizza le chiamate all'API del New York Times. Questo approccio semplifica la gestione delle chiamate API e facilita la manutenzione del codice. Fornisce funzioni per chiamate API specifiche come `fetchTopStories`, gestisce configurazioni comuni come la gestione delle chiavi API, e implementa meccanismi di caching e gestione degli errori per migliorare le prestazioni e l'affidabilità delle chiamate API.
 
+### LocalForage
+
+Utilizziamo `localforage` per memorizzare i dati localmente nel browser. Questo permette un accesso più veloce ai dati e una migliore gestione della cache, migliorando l'esperienza utente anche quando la connessione di rete è lenta o intermittente.
+
+### Helmet
+
+Usiamo `react-helmet` per gestire i titoli delle pagine e altri elementi dell'head del documento in modo dinamico, migliorando l'ottimizzazione per i motori di ricerca (SEO) e l'accessibilità.
+
 ## Struttura del Progetto
 
 - **src/components/Navbar.jsx**: Contiene il componente Navbar.
@@ -55,13 +63,37 @@ Il servizio API centralizza le chiamate all'API del New York Times. Questo appro
 - **src/components/Footer.jsx**: Contiene il componente Footer.
 - **src/components/HeroBlockArticles.jsx**: Contiene il componente HeroBlockArticles.
 - **src/components/OneArticleBlock.jsx**: Contiene il componente OneArticleBlock.
-- **src/components/TwoArticlesBlock.jsx**: Contiene il componente TwoArticlesBlock.
 - **src/components/ThreeArticlesBlock.jsx**: Contiene il componente ThreeArticlesBlock.
 - **src/services/api.js**: Contiene le funzioni di servizio per le chiamate all'API.
 
-## Link Diretto
-https://nytimescopy.netlify.app/
+## Installazione
 
+1. Clona il repository:
+    ```sh
+    git clone https://github.com/tuo-utente/nyt-clone.git
+    ```
+
+2. Installa le dipendenze:
+    ```sh
+    cd nyt-clone
+    npm install
+    ```
+
+3. Avvia il progetto:
+    ```sh
+    npm start
+    ```
+
+## Utilizzo
+
+Assicurati di avere una chiave API del New York Times. Puoi ottenere una chiave API [qui](https://developer.nytimes.com/get-started). Crea un file `.env` nella radice del progetto e aggiungi la tua chiave API:
+
+```env
+REACT_APP_NYT_API_KEY=la-tua-chiave-api
+
+
+## Link Diretto
+https://nytimesclone.netlify.app/
 
 ## Installazione
 
