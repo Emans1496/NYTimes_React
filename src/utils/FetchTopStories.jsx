@@ -5,8 +5,8 @@ import localforage from 'localforage';
 
 const fetchTopStories = async (section = 'home') => {
     const cacheKey = `topStories-${section}`;
-    const apiKey = process.env.REACT_APP_API_KEY;
-    const BASE_URL = process.env.REACT_APP_BASE_URL;
+    const apiKey='27o3LSgGKbZCdixS9imrr5T1scWoKeAG';
+    const BASE_URL='https://api.nytimes.com/svc/topstories/v2';
 
     try {
         const cachedData = await localforage.getItem(cacheKey);
